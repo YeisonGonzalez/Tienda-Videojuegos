@@ -7,8 +7,9 @@ public class Carreras extends AAA{
 	private boolean nitro;
 	private String[] TiposDeCarreras;
 	
-	public Carreras(String emp, String mot, String[] franq, String[] map,  boolean nit, String[] carrera ) {
-		super( emp,  mot, franq);
+	public Carreras(String[] plataformas, boolean online, boolean campaña, boolean cooperativo, int fov,
+			double calificacion, int minedad,String emp, String mot, String[] franq, String[] map,  boolean nit, String[] carrera ) {
+		super( plataformas, online, campaña, cooperativo, fov, calificacion, minedad,emp,  mot, franq);
 			this.setMa(map);
 			this.setN(nit);
 			this.setTdc(carrera);

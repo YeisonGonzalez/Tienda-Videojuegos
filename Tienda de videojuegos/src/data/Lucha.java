@@ -7,8 +7,9 @@ public class Lucha extends AAA {
 	private int lugares;
 	private String[] reglas;
 	
-	public Lucha(String emp, String mot, String[] franq, int pers, int luga, String[] regl) {
-		super(emp, mot, franq);
+	public Lucha(String[] plataformas, boolean online, boolean campaña, boolean cooperativo, int fov,
+			double calificacion, int minedad,String emp, String mot, String[] franq, int pers, int luga, String[] regl) {
+		super(plataformas, online, campaña, cooperativo, fov, calificacion, minedad,emp, mot, franq);
 		this.setP(pers);
 		this.setL(luga);
 		this.setR(regl);

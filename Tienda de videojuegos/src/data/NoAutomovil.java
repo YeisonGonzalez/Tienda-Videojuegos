@@ -7,8 +7,9 @@ public class NoAutomovil extends Carreras{
 	private	String[] objetos;
 	private	String[] TiposDeVehiculos;
 	
-	public NoAutomovil(String empresa, String motor, String[] franquicias, String[] map, boolean nit, String[] tip, int cop, String[] obj, String[] vehi ) {
-		super( empresa,  motor, franquicias, map, nit, tip);
+	public NoAutomovil(String[] plataformas, boolean online, boolean campaña, boolean cooperativo, int fov,
+			double calificacion, int minedad,String empresa, String motor, String[] franquicias, String[] map, boolean nit, String[] tip, int cop, String[] obj, String[] vehi ) {
+		super( plataformas, online, campaña, cooperativo, fov, calificacion, minedad,empresa,  motor, franquicias, map, nit, tip);
 		this.setC(cop);
 		this.setObs(obj);
 		this.setTi(vehi);

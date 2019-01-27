@@ -7,8 +7,9 @@ public class Automovil extends Carreras{
 	private String[] clases;
 	private String[] competiciones;
 	
-	public Automovil(String empresa, String motor, String[] franquicias, String[] map, boolean nit, String[] tip, int vehi, String[] clas, String[] compe ) {
-		super( empresa,  motor, franquicias, map, nit, tip);
+	public Automovil(String[] plataformas, boolean online, boolean campaña, boolean cooperativo, int fov,
+			double calificacion, int minedad,String empresa, String motor, String[] franquicias, String[] map, boolean nit, String[] tip, int vehi, String[] clas, String[] compe ) {
+		super(plataformas, online, campaña, cooperativo, fov, calificacion, minedad,empresa,  motor, franquicias, map, nit, tip);
 		this.setV(vehi);
 		this.setC(clas);
 		this.setCo(compe);

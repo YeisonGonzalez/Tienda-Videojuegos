@@ -7,8 +7,9 @@ public class Seccionado extends MundoAbierto{
 	private int TotalDeMisiones;
 	private int CantidadDeMapas;
 	
-	public Seccionado(String empresa,String motor,String[] franquicias,double tamaño, int edificos,int poblacion,String[] secciones,int misiones,int mapas ) {
-		super(empresa, motor, franquicias, tamaño,edificos, poblacion);
+	public Seccionado(String[] plataformas, boolean online, boolean campaña, boolean cooperativo, int fov,
+			double calificacion, int minedad,String empresa,String motor,String[] franquicias,double tamaño, int edificos,int poblacion,String[] secciones,int misiones,int mapas ) {
+		super(plataformas, online, campaña, cooperativo, fov, calificacion, minedad,empresa, motor, franquicias, tamaño,edificos, poblacion);
 		this.setN(secciones);
 		this.setTot(misiones);
 		this.setC(mapas);

@@ -7,8 +7,9 @@ public class Unico extends MundoAbierto{
 	private int secundarias;
 	private String[] coleccionables;
 	
-	public Unico(String empresa, String motor, String[] franquicias, double tamaño, int edificos, int poblacion, String[] territorios, int secundaria, String[] coleccionables ) {
-		super(empresa, motor, franquicias, tamaño,edificos, poblacion);
+	public Unico(String[] plataformas, boolean online, boolean campaña, boolean cooperativo, int fov,
+			double calificacion, int minedad,String empresa, String motor, String[] franquicias, double tamaño, int edificos, int poblacion, String[] territorios, int secundaria, String[] coleccionables ) {
+		super(plataformas, online, campaña, cooperativo, fov, calificacion, minedad,empresa, motor, franquicias, tamaño,edificos, poblacion);
 		this.setTer(territorios);
 		this.setSec(secundaria);
 		this.setCo(coleccionables);

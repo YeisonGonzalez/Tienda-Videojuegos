@@ -7,8 +7,9 @@ public class OneVsOne extends Lucha{
 	private String[] habilidades;
 	private String metodologia;
 	
-	public OneVsOne(String empresa, String motor, String[] franquicias, int pers, int lug, String[] reg, double sim, String[] hab, String met) {
-		super(empresa, motor, franquicias, pers, lug, reg);
+	public OneVsOne(String[] plataformas, boolean online, boolean campaña, boolean cooperativo, int fov,
+			double calificacion, int minedad,String empresa, String motor, String[] franquicias, int pers, int lug, String[] reg, double sim, String[] hab, String met) {
+		super(plataformas, online, campaña, cooperativo, fov, calificacion, minedad,empresa, motor, franquicias, pers, lug, reg);
 		this.setS(sim);
 		this.setH(hab);
 		this.setMe(met);

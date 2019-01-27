@@ -5,8 +5,9 @@ public class MundoAbierto extends AAA{
 	private int edificios;
 	private int poblacion;
 	
-	public MundoAbierto(String emp, String mot, String[] franq, double mapa,  int edif, int pobla) {
-		super(emp, mot, franq);
+	public MundoAbierto(String[] plataformas, boolean online, boolean campaña, boolean cooperativo, int fov,
+			double calificacion, int minedad,String emp, String mot, String[] franq, double mapa,  int edif, int pobla) {
+		super(plataformas, online, campaña, cooperativo, fov, calificacion, minedad, emp, mot, franq);
 		this.setT(mapa);
 		this.setEd(edif);
 		this.setPo(pobla);

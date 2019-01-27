@@ -7,8 +7,9 @@ public class PvE extends OneVsAll{
 	private String[] dificultad;
 	private String[] TiposDeEnemigos;
 	
-	public PvE(String empresa, String motor, String[] franquicias, int pers, int lug, String[] reg, int ene, double sim, String[] arm, int or, String[] dif, String[] tip) {
-		super(empresa, motor, franquicias, pers, lug, reg, ene, sim, arm);
+	public PvE(String[] plataformas, boolean online, boolean campaña, boolean cooperativo, int fov,
+			double calificacion, int minedad,String empresa, String motor, String[] franquicias, int pers, int lug, String[] reg, int ene, double sim, String[] arm, int or, String[] dif, String[] tip) {
+		super(plataformas, online, campaña, cooperativo, fov, calificacion, minedad,empresa, motor, franquicias, pers, lug, reg, ene, sim, arm);
 		this.setO(or);
 		this.setD(dif);
 		this.setT(tip);

@@ -3,7 +3,7 @@ package data;
 import java.util.Arrays;
 
 public class Videojuegos {
-	private String [] plataformas;
+	private String[] plataformas;
 	private boolean online;
 	private boolean campaña;
 	private boolean cooperativo;

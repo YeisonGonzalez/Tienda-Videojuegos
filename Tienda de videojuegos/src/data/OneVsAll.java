@@ -8,8 +8,9 @@ public class OneVsAll extends Lucha{
 	private double simetria;
 	private String[] armas;
 	
-	public OneVsAll(String emp, String mot, String[] franq, int pers, int luga, String[] regl, int ene, double sim, String[] arm) {
-		super(emp, mot, franq, pers, luga, regl);
+	public OneVsAll(String[] plataformas, boolean online, boolean campaña, boolean cooperativo, int fov,
+			double calificacion, int minedad,String emp, String mot, String[] franq, int pers, int luga, String[] regl, int ene, double sim, String[] arm) {
+		super(plataformas, online, campaña, cooperativo, fov, calificacion, minedad,emp, mot, franq, pers, luga, regl);
 		this.setEn(ene);
 		this.setSi(sim);
 		this.setA(arm);

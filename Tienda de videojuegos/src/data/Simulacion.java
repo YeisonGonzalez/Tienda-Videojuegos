@@ -7,8 +7,9 @@ public class Simulacion extends Deportes {
 	private String[] licencias;
 	private int AñoDeLanzamiento;
 	
-	public Simulacion(String empresa, String motor, String[] franquicias, String dep, int juga, String[] ubi, String[] est, String[] lic, int ano) {
-		super(empresa, motor, franquicias, dep, juga, ubi);
+	public Simulacion(String[] plataformas, boolean online, boolean campaña, boolean cooperativo, int fov,
+			double calificacion, int minedad,String empresa, String motor, String[] franquicias, String dep, int juga, String[] ubi, String[] est, String[] lic, int ano) {
+		super(plataformas, online, campaña, cooperativo, fov, calificacion, minedad,empresa, motor, franquicias, dep, juga, ubi);
 		this.setEs(est);
 		this.setL(lic);
 		this.setAl(ano);

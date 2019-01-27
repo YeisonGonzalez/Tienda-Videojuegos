@@ -8,8 +8,9 @@ public class Deportes extends AAA{
 	private int jugadores;
 	private String[] ubicacion;
 	
-	public Deportes(String emp, String mot, String[] franq, String dep, int jugad , String[] ubic) {
-		super(emp, mot, franq);
+	public Deportes(String[] plataformas, boolean online, boolean campaña, boolean cooperativo, int fov,
+			double calificacion, int minedad,String emp, String mot, String[] franq, String dep, int jugad , String[] ubic) {
+		super(plataformas, online, campaña, cooperativo, fov, calificacion, minedad,emp, mot, franq);
 		this.setD(dep);
 		this.setJu(jugad);
 		this.setU(ubic);

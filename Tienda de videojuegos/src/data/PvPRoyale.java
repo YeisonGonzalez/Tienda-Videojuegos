@@ -7,8 +7,9 @@ public class PvPRoyale extends OneVsAll{
 	private String mapa;
 	private String[] CondicionesDeVictoria;
 	
-	public PvPRoyale(String empresa, String motor, String[] franquicias, int pers, int lug, String[] reg, int ene, double sim, String[] arm, int eq, String map, String[] cond) {
-		super(empresa, motor, franquicias, pers, lug, reg, ene, sim, arm);
+	public PvPRoyale(String[] plataformas, boolean online, boolean campaña, boolean cooperativo, int fov,
+			double calificacion, int minedad,String empresa, String motor, String[] franquicias, int pers, int lug, String[] reg, int ene, double sim, String[] arm, int eq, String map, String[] cond) {
+		super(plataformas, online, campaña, cooperativo, fov, calificacion, minedad,empresa, motor, franquicias, pers, lug, reg, ene, sim, arm);
 		this.setC(cond);
 		this.setEq(eq);
 		this.setM(map);

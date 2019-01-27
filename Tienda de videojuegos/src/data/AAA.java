@@ -2,12 +2,14 @@ package data;
 
 import java.util.Arrays;
 
-public class AAA {
+public class AAA extends Videojuegos{
 	private String empresa;
 	private String motor;
 	private String[] franquicias;
 	
-	public AAA(String emp, String mot, String[] franq ) {
+	public AAA(String[] plataformas, boolean online, boolean campaña, boolean cooperativo, int fov,
+			double calificacion, int minedad, String emp, String mot, String[] franq ) {
+		super(plataformas, online, campaña, cooperativo, fov, calificacion, minedad);
 		this.setE(emp);
 		this.setM(mot);
 		this.setF(franq);
