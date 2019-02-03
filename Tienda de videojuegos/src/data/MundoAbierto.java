@@ -4,6 +4,7 @@ public class MundoAbierto extends AAA{
 	private double TamanoDeMapa;
 	private int edificios;
 	private int poblacion;
+	private static int numeroMundoAbierto = 0;
 	
 	public MundoAbierto(String[] plataformas, boolean online, boolean campaña, boolean cooperativo, int fov,
 			double calificacion, int minedad,String emp, String mot, String[] franq, double mapa,  int edif, int pobla) {
@@ -11,8 +12,13 @@ public class MundoAbierto extends AAA{
 		this.setT(mapa);
 		this.setEd(edif);
 		this.setPo(pobla);
+		numeroMundoAbierto++;
 	}
 	
+	public static int getNumeroMundoAbierto() {
+		return numeroMundoAbierto;
+	}
+
 	public double getT() {
 		return this.TamanoDeMapa;
 	}

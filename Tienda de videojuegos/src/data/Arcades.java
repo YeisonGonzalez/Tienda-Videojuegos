@@ -5,7 +5,7 @@ public class Arcades extends indies {
 	private int niveles;
 	private String visualizacion;
 	private int Objetos;
-	
+	private static int numeroArcades = 0;
 	
 	
 	public int getNiveles() {
@@ -27,6 +27,10 @@ public class Arcades extends indies {
 		this.Objetos = objetos;
 	}
 	
+	public static int getNumeroArcades() {
+		return numeroArcades;
+	}
+	
 	public Arcades(String[] plataformas, boolean online, boolean campaña, boolean cooperativo, int fov,
 			double calificacion, int minedad, int integrantes, int inversion, String ludonarratividad, int niveles,
 			
@@ -36,6 +40,7 @@ public class Arcades extends indies {
 		this.niveles = niveles;
 		this.visualizacion = visualizacion;
 		this.Objetos = objetos;
+		numeroArcades++;
 	}
 	@Override
 	public String toString() {

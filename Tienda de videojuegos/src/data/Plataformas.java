@@ -7,6 +7,7 @@ public class Plataformas extends Arcades {
 	private int velocidad;
 	private String[] obstaculos;
 	private String[] enemigos;
+	private static int numeroPlataformas = 0;
 	
 	
 	public int getVelocidad() {
@@ -28,6 +29,10 @@ public class Plataformas extends Arcades {
 		this.enemigos = enemigos;
 	}
 	
+	public static int getNumeroPlataformas() {
+		return numeroPlataformas;
+	}
+
 	public Plataformas(String[] plataformas, boolean online, boolean campaña, boolean cooperativo, int fov,
 			double calificacion, int minedad, int integrantes, int inversion, String ludonarratividad, int niveles,
 			String visualizacion, int objetos, int velocidad, String[] obstaculos, String[] enemigos) {
@@ -36,6 +41,7 @@ public class Plataformas extends Arcades {
 		this.velocidad = velocidad;
 		this.obstaculos = obstaculos;
 		this.enemigos = enemigos;
+		numeroPlataformas++;
 	}
 	@Override
 	public String toString() {

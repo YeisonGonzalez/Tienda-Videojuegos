@@ -6,8 +6,14 @@ public class estrategia extends indies {
 	private String[] parametros;
 	private String[] mapas;
 	private String[] recursos;
+	private static int numeroEstrategia = 0;
 	
 	
+	
+	public static int getNumeroEstrategia() {
+		return numeroEstrategia;
+	}
+
 	public String[] getParametros() {
 		return parametros;
 	}
@@ -35,6 +41,7 @@ public class estrategia extends indies {
 		this.parametros = parametros;
 		this.mapas = mapas;
 		this.recursos = recursos;
+		numeroEstrategia++;
 	}
 	@Override
 	public String toString() {

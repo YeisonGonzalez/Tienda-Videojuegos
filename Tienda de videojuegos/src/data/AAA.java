@@ -6,6 +6,7 @@ public class AAA extends Videojuegos{
 	private String empresa;
 	private String motor;
 	private String[] franquicias;
+	private static int numeroAAA = 0;
 	
 	public AAA(String[] plataformas, boolean online, boolean campaña, boolean cooperativo, int fov,
 			double calificacion, int minedad, String emp, String mot, String[] franq ) {
@@ -13,9 +14,14 @@ public class AAA extends Videojuegos{
 		this.setE(emp);
 		this.setM(mot);
 		this.setF(franq);
+		numeroAAA++;
 	}
 	
 	
+	public static int getNumeroAAA() {
+		return numeroAAA;
+	}
+
 	public String getE() {
 		return this.empresa;
 	}

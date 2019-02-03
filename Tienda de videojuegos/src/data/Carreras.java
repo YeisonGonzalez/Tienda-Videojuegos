@@ -6,6 +6,7 @@ public class Carreras extends AAA{
 	private String[] mapas;
 	private boolean nitro;
 	private String[] TiposDeCarreras;
+	private static int numeroCarreras = 0;
 	
 	public Carreras(String[] plataformas, boolean online, boolean campaña, boolean cooperativo, int fov,
 			double calificacion, int minedad,String emp, String mot, String[] franq, String[] map,  boolean nit, String[] carrera ) {
@@ -13,9 +14,14 @@ public class Carreras extends AAA{
 			this.setMa(map);
 			this.setN(nit);
 			this.setTdc(carrera);
+			numeroCarreras++;
 	}
 	
 	
+	public static int getNumeroCarreras() {
+		return numeroCarreras;
+	}
+
 	public String[] getMa() {
 		return this.mapas;
 	}

@@ -6,6 +6,7 @@ public class PvE extends OneVsAll{
 	private int ordas;
 	private String[] dificultad;
 	private String[] TiposDeEnemigos;
+	private static int numeroPvE = 0;
 	
 	public PvE(String[] plataformas, boolean online, boolean campaña, boolean cooperativo, int fov,
 			double calificacion, int minedad,String empresa, String motor, String[] franquicias, int pers, int lug, String[] reg, int ene, double sim, String[] arm, int or, String[] dif, String[] tip) {
@@ -13,8 +14,13 @@ public class PvE extends OneVsAll{
 		this.setO(or);
 		this.setD(dif);
 		this.setT(tip);
+		numeroPvE++;
 	}
 	
+	public static int getNumeroPvE() {
+		return numeroPvE;
+	}
+
 	public int getO() {
 		return this.ordas;
 	}

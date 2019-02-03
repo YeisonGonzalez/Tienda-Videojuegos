@@ -6,6 +6,7 @@ public class PvPRoyale extends OneVsAll{
 	private int equipos;
 	private String mapa;
 	private String[] CondicionesDeVictoria;
+	private static int numeroPvPRoyale = 0;
 	
 	public PvPRoyale(String[] plataformas, boolean online, boolean campaña, boolean cooperativo, int fov,
 			double calificacion, int minedad,String empresa, String motor, String[] franquicias, int pers, int lug, String[] reg, int ene, double sim, String[] arm, int eq, String map, String[] cond) {
@@ -13,8 +14,13 @@ public class PvPRoyale extends OneVsAll{
 		this.setC(cond);
 		this.setEq(eq);
 		this.setM(map);
+		numeroPvPRoyale++;
 	}
 	
+	public static int getNumeroPvPRoyale() {
+		return numeroPvPRoyale;
+	}
+
 	public int getEq() {
 		return this.equipos;
 	}

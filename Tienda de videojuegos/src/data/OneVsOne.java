@@ -6,6 +6,7 @@ public class OneVsOne extends Lucha{
 	private double SimetriaDeCondiciones;
 	private String[] habilidades;
 	private String metodologia;
+	private static int numeroOneVSOne = 0;
 	
 	public OneVsOne(String[] plataformas, boolean online, boolean campaña, boolean cooperativo, int fov,
 			double calificacion, int minedad,String empresa, String motor, String[] franquicias, int pers, int lug, String[] reg, double sim, String[] hab, String met) {
@@ -13,8 +14,13 @@ public class OneVsOne extends Lucha{
 		this.setS(sim);
 		this.setH(hab);
 		this.setMe(met);
+		numeroOneVSOne++;
 	}
 	
+	public static int getNumeroOneVSOne() {
+		return numeroOneVSOne;
+	}
+
 	public double getS() {
 		return this.SimetriaDeCondiciones;
 	}

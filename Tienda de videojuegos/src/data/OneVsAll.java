@@ -7,6 +7,7 @@ public class OneVsAll extends Lucha{
 	private int enemigos;
 	private double simetria;
 	private String[] armas;
+	private static int numeroOneVSAll = 0;
 	
 	public OneVsAll(String[] plataformas, boolean online, boolean campaña, boolean cooperativo, int fov,
 			double calificacion, int minedad,String emp, String mot, String[] franq, int pers, int luga, String[] regl, int ene, double sim, String[] arm) {
@@ -14,7 +15,13 @@ public class OneVsAll extends Lucha{
 		this.setEn(ene);
 		this.setSi(sim);
 		this.setA(arm);
+		numeroOneVSAll++;
 	}
+	
+	public static int getNumeroOneVSAll() {
+		return numeroOneVSAll;
+	}
+
 	public int getEn() {
 		return this.enemigos;
 	}

@@ -6,6 +6,7 @@ public class EstiloLibre extends Deportes {
 	private String[] lugares;
 	private String[] personajes; 
 	private String[] objetos;
+	private static int numeroEstiloLibre = 0;
 
 	public EstiloLibre(String[] plataformas, boolean online, boolean campaña, boolean cooperativo, int fov,
 			double calificacion, int minedad,String empresa, String motor, String[] franquicias, String dep, int juga, String[] ubi, String[] lug, String[] pers, String[] obj) {
@@ -13,8 +14,13 @@ public class EstiloLibre extends Deportes {
 		this.setL(lug);
 		this.setP(pers);
 		this.setO(obj);
+		numeroEstiloLibre++;
 	}
 	
+	public static int getNumeroEstiloLibre() {
+		return numeroEstiloLibre;
+	}
+
 	public String[] getL() {
 		return this.lugares;
 	}

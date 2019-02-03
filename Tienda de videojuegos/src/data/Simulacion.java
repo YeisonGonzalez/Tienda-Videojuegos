@@ -6,6 +6,7 @@ public class Simulacion extends Deportes {
 	private String[] estudios;
 	private String[] licencias;
 	private int AñoDeLanzamiento;
+	private static int numeroSimulacion = 0;
 	
 	public Simulacion(String[] plataformas, boolean online, boolean campaña, boolean cooperativo, int fov,
 			double calificacion, int minedad,String empresa, String motor, String[] franquicias, String dep, int juga, String[] ubi, String[] est, String[] lic, int ano) {
@@ -13,8 +14,13 @@ public class Simulacion extends Deportes {
 		this.setEs(est);
 		this.setL(lic);
 		this.setAl(ano);
+		numeroSimulacion++;
 	}
 	
+	public static int getNumeroSimulacion() {
+		return numeroSimulacion;
+	}
+
 	public String[] getEs() {
 		return this.estudios;
 	}

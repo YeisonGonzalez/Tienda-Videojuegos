@@ -7,7 +7,7 @@ public class Aventura extends indies {
 	private String trama;
 	private String localizacion;
 	private String[] personajes;
-	
+	private static int numeroAventuras = 0;
 	
 	public String getTrama() {
 		return trama;
@@ -28,6 +28,10 @@ public class Aventura extends indies {
 		this.personajes = personajes;
 	}
 	
+	public static int getNumeroAventuras() {
+		return numeroAventuras;
+	}
+
 	public Aventura(String[] plataformas, boolean online, boolean campaña, boolean cooperativo, int fov,
 			double calificacion, int minedad, int integrantes, int inversion, String ludonarratividad, String trama,
 			String localizacion, String[] personajes) {
@@ -36,6 +40,7 @@ public class Aventura extends indies {
 		this.trama = trama;
 		this.localizacion = localizacion;
 		this.personajes = personajes;
+		numeroAventuras++;
 	}
 	@Override
 	public String toString() {

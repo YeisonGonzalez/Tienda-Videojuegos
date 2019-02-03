@@ -7,6 +7,7 @@ public class Deportes extends AAA{
 	private String deporte;
 	private int jugadores;
 	private String[] ubicacion;
+	private static int numeroDeportes = 0;
 	
 	public Deportes(String[] plataformas, boolean online, boolean campaña, boolean cooperativo, int fov,
 			double calificacion, int minedad,String emp, String mot, String[] franq, String dep, int jugad , String[] ubic) {
@@ -14,8 +15,13 @@ public class Deportes extends AAA{
 		this.setD(dep);
 		this.setJu(jugad);
 		this.setU(ubic);
+		numeroDeportes++;
 	}
-	
+		
+	public static int getNumeroDeportes() {
+		return numeroDeportes;
+	}
+
 	public String getD() {
 		return this.deporte;
 	}

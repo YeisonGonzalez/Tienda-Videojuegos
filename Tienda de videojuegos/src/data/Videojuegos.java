@@ -10,6 +10,7 @@ public class Videojuegos {
 	private int fov;
 	private double calificacion;
 	private int minedad;
+	private static int numeroVideojuegos = 0;
 	
 	public String[] getPlataformas() {
 		return plataformas;
@@ -54,6 +55,9 @@ public class Videojuegos {
 		this.minedad = minedad;
 	}
 	
+	public static int getNumeroVideojuegos() {
+		return numeroVideojuegos;
+	}
 	public Videojuegos(String[] plataformas, boolean online, boolean campaña, boolean cooperativo, int fov,
 			double calificacion, int minedad) {
 		super();
@@ -64,6 +68,7 @@ public class Videojuegos {
 		this.fov = fov;
 		this.calificacion = calificacion;
 		this.minedad = minedad;
+		numeroVideojuegos++;
 	}
 	@Override
 	public String toString() {

@@ -6,6 +6,7 @@ public class Lucha extends AAA {
 	private int personajes;
 	private int lugares;
 	private String[] reglas;
+	private static int numeroLucha = 0;
 	
 	public Lucha(String[] plataformas, boolean online, boolean campaña, boolean cooperativo, int fov,
 			double calificacion, int minedad,String emp, String mot, String[] franq, int pers, int luga, String[] regl) {
@@ -13,8 +14,13 @@ public class Lucha extends AAA {
 		this.setP(pers);
 		this.setL(luga);
 		this.setR(regl);
+		numeroLucha++;
 	}
 	
+	public static int getNumeroLucha() {
+		return numeroLucha;
+	}
+
 	public int getP() {
 		return this.personajes;
 	}

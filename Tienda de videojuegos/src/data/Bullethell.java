@@ -7,7 +7,7 @@ public class Bullethell extends Arcades {
 	private String contexto;
 	private String[] enemigos;
 	private String[] heroes;
-	
+	private static int numeroBullethell = 0;
 	
 	public String getContexto() {
 		return contexto;
@@ -27,6 +27,11 @@ public class Bullethell extends Arcades {
 	public void setHeroes(String[] heroes) {
 		this.heroes = heroes;
 	}
+	
+	public static int getNumeroBullethell() {
+		return numeroBullethell;
+	}
+
 	public Bullethell(String[] plataformas, boolean online, boolean campaña, boolean cooperativo, int fov,
 			double calificacion, int minedad, int integrantes, int inversion, String ludonarratividad, int niveles,
 			String visualizacion, int objetos, String contexto, String[] enemigos, String[] heroes) {
@@ -35,6 +40,7 @@ public class Bullethell extends Arcades {
 		this.contexto = contexto;
 		this.enemigos = enemigos;
 		this.heroes = heroes;
+		numeroBullethell++;
 	}
 	@Override
 	public String toString() {
